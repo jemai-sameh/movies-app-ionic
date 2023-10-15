@@ -1,32 +1,29 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="danger">
+  <ion-toolbar>
     <ion-title>
-      Blank
+      FlickPicks
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div id="container">
-        <ion-card [routerLink]="['/movies', 'popular']">
+  <div  class="bg-img">
+    <div id="container">
+        <ion-card [routerLink]="['/movies','movie','popular']" class="card-animation">
           <ion-card-header>
-            <ion-card-title>Popular</ion-card-title>
+            <ion-card-title>Popular Movie</ion-card-title>
           </ion-card-header>
         </ion-card>
-        <ion-card [routerLink]="['/movies', 'now-playing']">
+        <ion-card [routerLink]="['/movies','movie','upcoming']" class="card-animation">
           <ion-card-header>
-            <ion-card-title>Now Playing</ion-card-title>
+            <ion-card-title>Up Coming Movie</ion-card-title>
           </ion-card-header>
         </ion-card>
-        <ion-card [routerLink]="['/movies', 'upcoming']">
+        <ion-card [routerLink]="['/movies','tv','popular']" class="card-animation">
           <ion-card-header>
-            <ion-card-title>up Coming</ion-card-title>
+            <ion-card-title>Popular TV</ion-card-title>
           </ion-card-header>
-        </ion-card>
-        <ion-card [routerLink]="['/movies', 'top-rated']">
-          <ion-card-header>
-            <ion-card-title>Top Rated</ion-card-title>
-          </ion-card-header>
-        </ion-card>
+        </ion-card>        
       </div>
+    </div>
 </ion-content>

@@ -25,3 +25,24 @@
 #container a {
   text-decoration: none;
 }
+
+
+ion-toolbar {
+  --background: #af126c !important;
+  --color: #ffffff ;
+}
+.bg-img {
+  padding: 1px;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../../assets/background1.png");
+  //src/assets/background.png
+  //background-repeat: repeat-y;
+  background-size: contain;
+}
+
+.card-animation:hover {
+  transition: transform 0.5s ease;
+  --background: #f7e6f0 !important;
+  transform: scale(1.05);
+}
