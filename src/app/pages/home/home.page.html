@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger">
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+        <ion-card [routerLink]="['/movies', 'popular']">
+          <ion-card-header>
+            <ion-card-title>Popular</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+        <ion-card [routerLink]="['/movies', 'now-playing']">
+          <ion-card-header>
+            <ion-card-title>Now Playing</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+        <ion-card [routerLink]="['/movies', 'upcoming']">
+          <ion-card-header>
+            <ion-card-title>up Coming</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+        <ion-card [routerLink]="['/movies', 'top-rated']">
+          <ion-card-header>
+            <ion-card-title>Top Rated</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </div>
+</ion-content>
