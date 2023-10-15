@@ -46,3 +46,11 @@ ion-toolbar {
   --background: #f7e6f0 !important;
   transform: scale(1.05);
 }
+ion-title {
+  --font-weight: bolder;
+}
+
+ion-title  {
+  font-size: 30px; 
+  font-weight: bolder;
+}
